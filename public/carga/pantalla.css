@@ -1,0 +1,18 @@
+.loading-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1); /* Fondo completamente opaco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Agrega opacidad inicial */
+  transition: opacity 0.5s ease; /* Transición suave de la opacidad */
+}
+
+.loading-overlay.hidden {
+  opacity: 0; /* Cuando está oculto, se vuelve completamente transparente */
+}
